@@ -84,6 +84,7 @@ nav:
   - Сети:
       - networks/index.md
       - Модель OSI и TCP/IP: networks/osi.md
+      - IP-адреса и маски: networks/ip-addresses.md
       - VLAN и trunk: networks/vlan.md
   - Windows Server:
       - windows-server/index.md
