@@ -1,0 +1,16 @@
+# Собранный сайт
+site/
+
+# Виртуальное окружение
+.venv/
+venv/
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# Мусор редакторов и ОС
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

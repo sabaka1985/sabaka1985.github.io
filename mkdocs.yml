@@ -1,0 +1,117 @@
+# ============================================================
+#  Конфигурация сайта базы знаний (MkDocs + Material for MkDocs)
+#  Документация темы: https://squidfunk.github.io/mkdocs-material/
+# ============================================================
+
+site_name: IT База знаний
+site_description: Сети, Windows Server, 1С, Linux, базы данных, PowerShell, Cisco, траблшутинг
+site_author: Pavel
+site_url: https://sabaka1985.github.io/it-kb/
+
+# ЗАМЕНИТЕ USERNAME на свой логин GitHub в двух строках ниже
+repo_name: sabaka1985/it-kb
+repo_url: https://github.com/sabaka1985/it-kb
+edit_uri: edit/main/docs/
+
+copyright: Собрано вручную и с любовью
+
+theme:
+  name: material
+  language: ru
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search:
+      lang: ru
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      title: Содержание
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# ------------------------------------------------------------
+#  Навигация. Каждый раздел — папка в docs/ со своим index.md
+# ------------------------------------------------------------
+nav:
+  - Главная: index.md
+  - Сети:
+      - networks/index.md
+      - Модель OSI и TCP/IP: networks/osi.md
+      - VLAN и trunk: networks/vlan.md
+  - Windows Server:
+      - windows-server/index.md
+      - Active Directory: windows-server/ad.md
+      - Групповые политики: windows-server/gpo.md
+      - DNS и DHCP: windows-server/dns-dhcp.md
+  - 1С:
+      - 1c/index.md
+      - Установка сервера: 1c/install-server.md
+      - Резервное копирование: 1c/backup.md
+  - Linux:
+      - linux/index.md
+      - Базовые команды: linux/basic-commands.md
+      - systemd: linux/systemd.md
+  - Базы данных:
+      - databases/index.md
+      - MS SQL: databases/mssql.md
+      - PostgreSQL: databases/postgresql.md
+  - PowerShell:
+      - powershell/index.md
+      - Основы: powershell/basics.md
+      - Готовые скрипты: powershell/scripts.md
+  - Cisco:
+      - cisco/index.md
+      - Базовая настройка коммутатора: cisco/switch-setup.md
+      - VLAN на Cisco: cisco/vlan-cisco.md
+  - Траблшутинг:
+      - troubleshooting/index.md
+      - Диагностика сети: troubleshooting/network.md
+      - Проблемы Windows: troubleshooting/windows.md
+  - Теги: tags.md
