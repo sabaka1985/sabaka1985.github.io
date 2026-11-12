@@ -18,10 +18,13 @@ copyright: Собрано вручную и с любовью
 extra_css:
   - stylesheets/extra.css
 
-# Счётчик посещений GoatCounter: подставьте свой код сайта
-# (это часть адреса https://<код>.goatcounter.com). Пустое значение = счётчик выключен.
+# Счётчики посещений. Включается любым из двух — можно оба сразу.
+# goatcounter — имя аккаунта, часть адреса https://<код>.goatcounter.com
+# metrika     — номер счётчика Яндекс.Метрики
+# Пустое значение выключает соответствующий счётчик.
 extra:
   goatcounter: sabaka1985
+  metrika: ""
 
 theme:
   name: material

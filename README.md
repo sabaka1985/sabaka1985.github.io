@@ -159,20 +159,23 @@ git ls-remote https://github.com/ЛОГИН/it-kb.git
 
 ## Аналитика посещений
 
-На сайте подключён **GoatCounter** — бесплатный счётчик без куки. Код сайта задаётся одной строкой
-в `mkdocs.yml`:
+Поддерживаются два счётчика, включаются в `mkdocs.yml` независимо друг от друга:
 
 ```yaml
 extra:
-  goatcounter: sabaka1985
+  goatcounter: sabaka1985   # имя аккаунта, https://<код>.goatcounter.com
+  metrika: ""               # номер счётчика Яндекс.Метрики
 ```
 
-Это часть адреса `https://<код>.goatcounter.com`. Если аккаунт ещё не создан — зарегистрируйтесь
-на [goatcounter.com](https://www.goatcounter.com/signup) и выберите тот же код (или впишите свой).
-Статистика открывается на `https://<код>.goatcounter.com` после входа.
+Пустое значение выключает счётчик — скрипт просто не попадает в страницы. Сниппеты живут
+в `overrides/main.html`, который подключён через `theme.custom_dir`.
 
-Пустое значение `goatcounter:` отключает счётчик — скрипт просто не вставляется в страницы.
-Сниппет живёт в `overrides/main.html` (Material подключает его через `theme.custom_dir`).
+**GoatCounter** — бесплатный, без куки и баннеров. Регистрация: [goatcounter.com/signup](https://www.goatcounter.com/signup),
+поле **Account name** и станет поддоменом для входа в статистику.
+
+**Яндекс.Метрика** — если GoatCounter недоступен из вашей сети или нужны вебвизор и карты
+кликов. Номер счётчика берётся в [metrika.yandex.ru](https://metrika.yandex.ru) после создания
+счётчика с адресом `https://sabaka1985.github.io/it-kb/`.
 
 Полезно знать: счётчики блокируются расширениями (20–40 % визитов теряется), локальные
 просмотры `mkdocs serve` не считаются.
