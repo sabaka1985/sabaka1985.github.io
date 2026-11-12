@@ -18,11 +18,17 @@ copyright: Собрано вручную и с любовью
 extra_css:
   - stylesheets/extra.css
 
+# Счётчик посещений GoatCounter: подставьте свой код сайта
+# (это часть адреса https://<код>.goatcounter.com). Пустое значение = счётчик выключен.
+extra:
+  goatcounter: sabaka1985
+
 theme:
   name: material
   language: ru
   logo: assets/logo.png
   favicon: assets/favicon.png
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
   palette:

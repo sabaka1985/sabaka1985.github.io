@@ -157,6 +157,26 @@ git ls-remote https://github.com/ЛОГИН/it-kb.git
 ```
 
 
+## Аналитика посещений
+
+На сайте подключён **GoatCounter** — бесплатный счётчик без куки. Код сайта задаётся одной строкой
+в `mkdocs.yml`:
+
+```yaml
+extra:
+  goatcounter: sabaka1985
+```
+
+Это часть адреса `https://<код>.goatcounter.com`. Если аккаунт ещё не создан — зарегистрируйтесь
+на [goatcounter.com](https://www.goatcounter.com/signup) и выберите тот же код (или впишите свой).
+Статистика открывается на `https://<код>.goatcounter.com` после входа.
+
+Пустое значение `goatcounter:` отключает счётчик — скрипт просто не вставляется в страницы.
+Сниппет живёт в `overrides/main.html` (Material подключает его через `theme.custom_dir`).
+
+Полезно знать: счётчики блокируются расширениями (20–40 % визитов теряется), локальные
+просмотры `mkdocs serve` не считаются.
+
 ## Структура
 
 ```
@@ -164,6 +184,7 @@ it-kb/
 ├── mkdocs.yml                  # вся конфигурация: навигация, тема, плагины
 ├── requirements.txt            # версия mkdocs-material
 ├── .github/workflows/deploy.yml
+├── overrides/main.html         # свой шаблон: счётчик GoatCounter
 ├── scripts/check_links.py      # проверка ссылок и структуры
 └── docs/
     ├── index.md                # главная страница с плитками разделов
