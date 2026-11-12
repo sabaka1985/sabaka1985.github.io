@@ -15,11 +15,15 @@ edit_uri: edit/main/docs/
 
 copyright: Собрано вручную и с любовью
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
   name: material
   language: ru
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   icon:
-    logo: material/book-open-page-variant
     repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
