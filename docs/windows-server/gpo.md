@@ -57,7 +57,8 @@ gpresult /h C:\temp\gpo.html     # полный отчёт в HTML — удоб�
 ## Фильтрация
 
 - **Security Filtering** — кому применять (по умолчанию `Authenticated Users`).
-- **WMI Filter** — применять только подходящим ПК, например ноутбукам:
+- **WMI Filter** — применять только подходящим ПК, например ноутбукам
+  (готовые запросы — в [WMI-фильтрах](wmi-filters.md)):
 
 ```sql
 SELECT * FROM Win32_ComputerSystem WHERE PCSystemType = 2

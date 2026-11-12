@@ -96,6 +96,7 @@ nav:
       - windows-server/index.md
       - Active Directory: windows-server/ad.md
       - Групповые политики: windows-server/gpo.md
+      - WMI-фильтры: windows-server/wmi-filters.md
       - DNS и DHCP: windows-server/dns-dhcp.md
   - 1С:
       - 1c/index.md
