@@ -1,4 +1,4 @@
-<img class="hero" src="assets/hero.png" alt="IT База знаний">
+<img class="hero" src="assets/hero.webp" alt="IT База знаний">
 
 # IT База знаний
 
