@@ -1,4 +1,5 @@
 ---
+description: "Групповые политики Windows: порядок применения LSDOU, фильтрация, gpresult и разбор причин, почему GPO не применяется."
 tags:
   - windows server
   - gpo

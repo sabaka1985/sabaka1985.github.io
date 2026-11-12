@@ -1,4 +1,5 @@
 ---
+description: "Active Directory: домен, OU, роли FSMO, диагностика dcdiag и repadmin, типовые проблемы с DNS и рассинхронизацией времени."
 tags:
   - windows server
   - active directory

@@ -1,4 +1,5 @@
 ---
+description: "Базовая настройка коммутатора Cisco: hostname, пароли, management IP, SSH вместо telnet, сохранение конфигурации и типичные ошибки."
 tags:
   - cisco
   - коммутация

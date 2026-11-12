@@ -1,4 +1,5 @@
 ---
+description: "Готовые WQL-запросы для WMI-фильтров групповых политик: версии Windows, ProductType, диски, службы, обновления и типичные ошибки."
 tags:
   - windows server
   - gpo
