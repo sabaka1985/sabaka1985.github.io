@@ -96,6 +96,7 @@ nav:
   - 1С:
       - 1c/index.md
       - Установка сервера: 1c/install-server.md
+      - Установка с MS SQL на Windows: 1c/install-1c-mssql-windows.md
       - Резервное копирование: 1c/backup.md
   - Linux:
       - linux/index.md
