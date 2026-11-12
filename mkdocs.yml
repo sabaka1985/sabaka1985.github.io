@@ -20,10 +20,11 @@ extra_css:
 
 # Счётчики посещений. Включается любым из двух — можно оба сразу.
 # goatcounter — имя аккаунта, часть адреса https://<код>.goatcounter.com
+#               В РФ домен обрывается на TLS (ERR_CONNECTION_CLOSED), поэтому выключен.
 # metrika     — номер счётчика Яндекс.Метрики
 # Пустое значение выключает соответствующий счётчик.
 extra:
-  goatcounter: sabaka1985
+  goatcounter: ""
   metrika: ""
 
 theme:
