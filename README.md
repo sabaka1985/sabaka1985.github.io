@@ -46,8 +46,8 @@ python scripts/check_links.py
 
 ## Публикация на GitHub Pages
 
-1. Создайте на GitHub пустой репозиторий, например `it-kb` (без README).
-2. Замените `USERNAME` на свой логин в `mkdocs.yml` (`site_url`, `repo_name`, `repo_url`).
+1. Репозиторий на GitHub должен называться `<логин>.github.io` — тогда сайт открывается с корня домена. У нас это `sabaka1985/sabaka1985.github.io`.
+2. Проверьте `mkdocs.yml`: `site_url`, `repo_name`, `repo_url` указывают на этот репозиторий и адрес `https://sabaka1985.github.io/`.
 3. Залейте проект (Windows, PowerShell).
 
    Откройте PowerShell в папке проекта — в Проводнике: `Shift` + правый клик по папке `it-kb` → **Открыть окно PowerShell здесь**.
@@ -76,7 +76,7 @@ git commit -m "База знаний: первый коммит"
 git branch -M main
 
 # 4. связываем с GitHub и отправляем
-git remote add origin https://github.com/USERNAME/it-kb.git
+git remote add origin https://github.com/sabaka1985/sabaka1985.github.io.git
 git push -u origin main
 ```
 
@@ -102,7 +102,7 @@ git init
 git add .
 git commit -m "Knowledge base: initial commit"
 git branch -M main
-git remote add origin https://github.com/USERNAME/it-kb.git
+git remote add origin https://github.com/sabaka1985/sabaka1985.github.io.git
 git push -u origin main
 ```
 
@@ -117,7 +117,7 @@ git init
 git add .
 git commit -m "База знаний: первый коммит"
 git branch -M main
-git remote add origin https://github.com/USERNAME/it-kb.git
+git remote add origin https://github.com/sabaka1985/sabaka1985.github.io.git
 git push -u origin main
 ```
 
@@ -126,7 +126,11 @@ git push -u origin main
 4. В репозитории: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 5. Каждый `git push` в `main` запускает workflow `.github/workflows/deploy.yml` и обновляет сайт.
 
-Адрес сайта: `https://USERNAME.github.io/it-kb/`
+Адрес сайта: `https://sabaka1985.github.io/`
+
+> **Переезд с `it-kb`.** Репозиторий переименовывается в GitHub: **Settings → Repository name** →
+> `sabaka1985.github.io`. Затем `git remote set-url origin https://github.com/sabaka1985/sabaka1985.github.io.git`
+> и `git push`. Старые адреса вида `…/it-kb/networks/osi/` после переезда не работают — редиректа у Pages нет.
 
 > Если репозиторий приватный, GitHub Pages на бесплатном плане недоступен — нужен Pro/Team.
 
@@ -137,7 +141,7 @@ git push -u origin main
 
 ```powershell
 git remote -v                                                    # посмотреть текущий адрес
-git remote set-url origin https://github.com/ЛОГИН/it-kb.git     # заменить на свой
+git remote set-url origin https://github.com/ЛОГИН/ЛОГИН.github.io.git   # заменить на свой
 git remote -v                                                    # убедиться, что заменилось
 ```
 
@@ -145,7 +149,7 @@ git remote -v                                                    # убедит�
 
 ```powershell
 git remote remove origin
-git remote add origin https://github.com/ЛОГИН/it-kb.git
+git remote add origin https://github.com/ЛОГИН/ЛОГИН.github.io.git
 ```
 
 Проверить, что репозиторий на GitHub уже создан и доступен (не ошибка — пустой вывод,
@@ -153,7 +157,7 @@ git remote add origin https://github.com/ЛОГИН/it-kb.git
 
 ```powershell
 $env:GIT_TERMINAL_PROMPT = "0"
-git ls-remote https://github.com/ЛОГИН/it-kb.git
+git ls-remote https://github.com/ЛОГИН/ЛОГИН.github.io.git
 ```
 
 
@@ -175,7 +179,7 @@ extra:
 
 **Яндекс.Метрика** — если GoatCounter недоступен из вашей сети или нужны вебвизор и карты
 кликов. Номер счётчика берётся в [metrika.yandex.ru](https://metrika.yandex.ru) после создания
-счётчика с адресом `https://sabaka1985.github.io/it-kb/`.
+счётчика с адресом `https://sabaka1985.github.io/`.
 
 Полезно знать: счётчики блокируются расширениями (20–40 % визитов теряется), локальные
 просмотры `mkdocs serve` не считаются.

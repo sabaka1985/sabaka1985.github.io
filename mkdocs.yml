@@ -6,11 +6,11 @@
 site_name: IT База знаний
 site_description: Сети, Windows Server, 1С, Linux, базы данных, PowerShell, Cisco, траблшутинг
 site_author: Pavel
-site_url: https://sabaka1985.github.io/it-kb/
+site_url: https://sabaka1985.github.io/
 
-# ЗАМЕНИТЕ USERNAME на свой логин GitHub в двух строках ниже
-repo_name: sabaka1985/it-kb
-repo_url: https://github.com/sabaka1985/it-kb
+# Репозиторий называется как домен — это user site, сайт открывается с корня
+repo_name: sabaka1985/sabaka1985.github.io
+repo_url: https://github.com/sabaka1985/sabaka1985.github.io
 edit_uri: edit/main/docs/
 
 copyright: Собрано вручную и с любовью

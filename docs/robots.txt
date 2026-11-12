@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sabaka1985.github.io/it-kb/sitemap.xml
+Sitemap: https://sabaka1985.github.io/sitemap.xml
