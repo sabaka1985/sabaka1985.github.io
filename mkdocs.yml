@@ -25,7 +25,7 @@ extra_css:
 # Пустое значение выключает соответствующий счётчик.
 extra:
   goatcounter: ""
-  metrika: ""
+  metrika: "114216993"
 
 theme:
   name: material
